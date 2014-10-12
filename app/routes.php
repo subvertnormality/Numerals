@@ -11,7 +11,16 @@
 |
 */
 
+
+
 Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+
+
+Route::post('/romannumeral/parse', 'RomanNumeralController@parseRomanNumeral');
+
+Route::post('/romannumeral/generate', 'RomanNumeralController@generateRomanNumeral');
+

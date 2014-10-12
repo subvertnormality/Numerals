@@ -2,7 +2,6 @@
 
 use Numerals\Services\NumeralsGenerator;
 
-//use Numerals\Services\Processors\Processor;
 
 class NumeralsGeneratorTest extends \TestCase
 {

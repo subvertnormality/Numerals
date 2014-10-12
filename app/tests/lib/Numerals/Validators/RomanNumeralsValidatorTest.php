@@ -2,8 +2,6 @@
 
 use Numerals\Validators\RomanNumeralsValidator;
 
-//use Numerals\Services\Processors\Processor;
-
 class NumeralsValidatorTest extends \TestCase
 {
 

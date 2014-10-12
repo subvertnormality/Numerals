@@ -14,8 +14,8 @@ class NumeralsGeneratorTest extends \TestCase
 
     function setup()
     {
-        $this->generatorStub = $this->getMock('Numerals\Services\Processors\NumeralsProcessor');
-        $this->parserStub = $this->getMock('Numerals\Services\Processors\NumeralsProcessor');
+        $this->generatorStub = $this->getMock('Numerals\Services\Processors\Processor');
+        $this->parserStub = $this->getMock('Numerals\Services\Processors\Processor');
         $this->service = new NumeralsGenerator($this->generatorStub, $this->parserStub);
     }
 

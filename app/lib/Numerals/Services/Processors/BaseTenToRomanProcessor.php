@@ -2,9 +2,9 @@
 
 namespace Numerals\Services\Processors;
 
-use Numerals\Validators\NumeralsValidator;
+use Numerals\Validators\Validator;
 
-class BaseTenToRomanProcessor implements NumeralsProcessor {
+class BaseTenToRomanProcessor implements Processor {
 
     private $validator;
 
@@ -24,7 +24,7 @@ class BaseTenToRomanProcessor implements NumeralsProcessor {
         1 => "I"
     );
 
-    public function __construct(NumeralsValidator $validator) {
+    public function __construct(Validator $validator) {
         $this->validator = $validator;
     }
 

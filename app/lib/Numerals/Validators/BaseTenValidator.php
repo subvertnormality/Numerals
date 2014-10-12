@@ -2,7 +2,7 @@
 
 namespace Numerals\Validators;
 
-class BaseTenValidator implements NumeralsValidator {
+class BaseTenValidator implements Validator {
 
     public function validate($numeral) {
         $isWholeInteger = preg_match("/^[0-9]*$/", $numeral);

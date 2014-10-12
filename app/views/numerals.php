@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Laravel PHP Framework</title>
-    <link href="public/styles/roman.css" media="screen" type="text/css" rel="stylesheet">
+    <link href="/styles/roman.css" media="screen" type="text/css" rel="stylesheet">
 </head>
 <body>
     <h1>Roman Numerals</h1>
@@ -22,6 +22,6 @@
     </form>
     <div id="result"></div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="/public/javascripts/form.js"></script>
+    <script src="/javascripts/form.js"></script>
 </body>
 </html>

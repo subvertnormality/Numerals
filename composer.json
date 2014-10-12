@@ -10,7 +10,6 @@
 	"autoload": {
 		"classmap": [
 			"app/controllers",
-			"app/models",
 			"app/tests"
 		],
     "psr-0": {

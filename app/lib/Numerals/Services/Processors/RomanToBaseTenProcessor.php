@@ -36,6 +36,19 @@ class RomanToBaseTenProcessor implements NumeralsProcessor {
             return false;
         }
 
-        return '1234'; //TODO
+        $result = 0;
+
+        foreach($this->romanNumeralCompounds as $compound => $value) {
+            $numeral = str_replace($compound, "", $numeral, $count);
+            $result += $count * $value;
+        }
+
+        foreach($this->romanNumeralDigits as $digit => $value) {
+            $numeral = str_replace($digit, "", $numeral, $count);
+            $result += $count * $value;
+        }
+
+        return $result;
+
     }
 }

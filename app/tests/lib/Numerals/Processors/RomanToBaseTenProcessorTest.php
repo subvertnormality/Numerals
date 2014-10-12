@@ -38,8 +38,6 @@ class RomanToBaseTenProcessorTest extends \TestCase
             ->method('validate')
             ->will($this->returnValue(true));
 
-        var_dump($this->service->process($romanNumeral));
-        var_dump($expectedBaseTen);
         $this->assertEquals($this->service->process($romanNumeral), $expectedBaseTen);
     }
 
